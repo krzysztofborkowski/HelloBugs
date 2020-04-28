@@ -1,0 +1,100 @@
+activecomp {
+  name: "HelloWorld_MainComp"
+  width: 1280
+  height: 960
+  defaultcameradistance: 1777.7778
+  layer {
+    name: "logo.png"
+    id: 1
+    sourceid: 317
+    transform {
+      anchorPoint {
+        x: 175
+        y: 161.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 640
+        y: 454
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Component-Text Edit"
+    id: 2
+    sourceid: 28
+    transform {
+      anchorPoint {
+        x: 175
+        y: 30
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 628
+        y: 112
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  childtemplates: "HelloWorld_Component-Text Edit"
+}
+sources {
+  uid: 317
+  srctype: AE_IMAGE_SRC
+  name: "logo.png"
+  width: 350
+  height: 323
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 28
+  srctype: AE_COMP_SRC
+  name: "HelloWorld_Component-Text Edit.layout"
+  width: 350
+  height: 60
+  copy_source: true
+}

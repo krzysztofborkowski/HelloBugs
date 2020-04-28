@@ -1,0 +1,217 @@
+activecomp {
+  name: "HelloWorld_Component-Text Edit"
+  width: 350
+  height: 60
+  defaultcameradistance: 486.11111
+  layer {
+    name: "InputProperties"
+    id: 28
+    sourceid: 45
+    transform {
+      anchorPoint {
+        x: 25
+        y: 72.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 297.84836
+        y: -5.3947754
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    parentid: 30
+  }
+  layer {
+    name: "Text-BG"
+    id: 29
+    sourceid: 49
+    transform {
+      anchorPoint {
+        x: 175
+        y: 30
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 175
+        y: 29.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Text"
+    id: 30
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 0
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 17.151642
+        y: 41.782837
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 36
+      fontColor {
+        alpha: 1
+        red: 0.58432000875473022
+        green: 0.59216004610061646
+        blue: 0.5882299542427063
+      }
+      fontName: "ArialMT"
+      isPointText: true
+      isLabel: true
+      text: "Default Text"
+      multiline: false
+      isAllCaps: false
+    }
+  }
+  layer {
+    name: "Clear"
+    id: 31
+    sourceid: 12
+    transform {
+      anchorPoint {
+        x: 30
+        y: 30
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 322
+        y: 30
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "CYITextEditView"
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  properties {
+    key: "componentType"
+    value: "input"
+  }
+  properties {
+    key: "componentSubtype"
+    value: "regular"
+  }
+  childtemplates: "HelloWorld_Component-Text Edit-Btn-Clear"
+}
+sources {
+  uid: 45
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.58431375026702881
+    green: 0.59215688705444336
+    blue: 0.58823531866073608
+  }
+  width: 50
+  height: 145
+  copy_source: false
+}
+sources {
+  uid: 49
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 1
+    green: 1
+    blue: 1
+  }
+  width: 350
+  height: 60
+  copy_source: false
+}
+sources {
+  uid: 3
+  srctype: AE_FONT_SRC
+  name: "ArialMT"
+  copy_source: true
+  file_name: "yi_Arial-Regular.ttf"
+  style_name: "Regular"
+}
+sources {
+  uid: 12
+  srctype: AE_COMP_SRC
+  name: "HelloWorld_Component-Text Edit-Btn-Clear.layout"
+  width: 60
+  height: 60
+  copy_source: true
+}
