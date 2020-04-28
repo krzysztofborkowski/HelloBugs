@@ -1,0 +1,41 @@
+OVERVIEW:
+Below are few bugs we detected on AndroidTV devices.
+All of them were visible on MiBox and none on FireTV.
+
+BUG1:
+Observed behavior:
+  Sometimes, activating a text edit field results in text (single character) being inserted into the field.
+
+Steps to reproduce:
+  - build, install, launch the app (this can be code by calling `./build_and_run`)
+  - press Down once (to focus the text field)
+  - press Select to activate the text field
+  - repeat until bug is visible
+    - input few letters
+    - press Back to minimize the keyboard
+    - press Select to activate the text field
+
+Expected behavior:
+  Activating a text field shouldn't affect field's text
+
+
+BUG2:
+Observed behavior:
+  Pressing right-arrow key on virtual keyboard when cursor is at the end of text results in keyboard being switched
+  to password-specific keyboard
+
+Steps to reproduce:
+  - build, install, launch the app (this can be code by calling `./build_and_run`)
+  - press Down once (to focus the text field)
+  - press Select to activate the text field
+  - select the right-arrow key on virtual keyboard (near right-bottom corner)
+
+Expected behavior:
+  Pressing right-arrow key on virtual keyboard while the cursor is at the end of the text should do nothing
+
+Additional notes:
+  At first it may seem like the keyboard that pops up after pressing the arrow key is just a standard "expanded"
+  keyboard, but when inputting some text in non-youi application (ex. when logging to google account on the device)
+  we can see that this keyboard is shown only for password-fields and pressing virtual right-arrow on non-password
+  field does nothing
+
