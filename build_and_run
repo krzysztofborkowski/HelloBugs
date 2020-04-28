@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+ADB_FLAGS=${ADB_FLAGS:-}
+
+youi-tv build --youi_version $HOME/youiengine/5.13.0 -p android
+adb $ADB_FLAGS install build/android/project/helloworld/build/outputs/apk/debug/helloworld-debug.apk
+adb $ADB_FLAGS shell monkey -p tv.youi.helloworld -v 1
+
